@@ -1,6 +1,6 @@
 # System Information 💻
 
-![updater]("Screenshot 2026-06-02 191858.png")
+![updater](screenshot.png)
 
 This is a tool designed for people who need to view system info quickly alongside installing programs
 
