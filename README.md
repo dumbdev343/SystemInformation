@@ -1,4 +1,4 @@
-# System Information
+# System Information 💻
 
 
 This is a tool designed for people who need to view system info quickly alongside installing programs
