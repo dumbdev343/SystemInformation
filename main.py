@@ -68,7 +68,7 @@ if "yes" in pkgyes:
         if os.path.exists("/etc/zypp/zypper.conf"):
             print("Running with zypper....")
             os.system(f"sudo zypper install {pkgname}")
-updyes = input("Would you like to update your computer?")
+updyes = input("Would you like to update your computer? ")
 if "yes" in updyes:
     if platform.system() == "Linux":
         if os.path.exists("/etc/apt/apt.conf.d"):
