@@ -48,3 +48,17 @@ if "yes" in pkgyes:
         if os.path.exists("/etc/pacman.conf"):
             print("Pacman detected, using that instead....")
             os.system(f"pacman -Sy {pkgname}")
+        if os.path.exists("/etc/dnf/dnf.conf"):
+            print("DNF detected, using DNF....")
+            os.system(f"dnf install {pkgname}")
+        if os.path.exists("/etc/bashrc_Apple_Terminal"):
+            print("Sorry, macOS isn't supported yet...")
+        if os.path.exists("/data/data/com.termux/files/usr"):
+            print("Detected pkg, instaling with pkg....")
+            os.system(f"pkg install {pkgname} -y")
+        if os.path.exists("/etc/pkg"):
+            print("Detected pkg, instaling with pkg....")
+            os.system(f"pkg install {pkgname} -y")
+        if os.path.exists("/etc/zypp/zypper.conf"):
+            print("Running with zypper....")
+            os.system(f"sudo zypper install {pkgname}")
